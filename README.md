@@ -80,7 +80,8 @@ Este app está **pronto para publicar na Play Store** e começar a vender amanh�
 - ✅ Documentação profissional para portfólio
 
 ### Como contratar:
-📲 **Entre em contato agora pelo WhatsApp** e garanta seu app personalizado com a identidade visual da sua loja.
+📧 **Email:** sidney_g5@hotmail.com  
+📲 **Ou abra uma Issue aqui no GitHub** e me mande uma mensagem!
 
 ---
 
