@@ -12,6 +12,25 @@ A solução inclui também uma área administrativa protegida por senha para a d
 
 ---
 
+## 📸 Telas do Aplicativo
+
+Abaixo você vê as principais telas do app. Para colocar as suas próprias fotos, tire capturas de tela no emulador ou celular e cole o link de cada imagem nos espaços marcados com `SUA_IMAGEM_AQUI`.
+
+| Tela | Preview |
+|------|---------|
+| **Início** | ![Tela Inicial](SUA_IMAGEM_AQUI) |
+| **Categorias** | ![Categorias](SUA_IMAGEM_AQUI) |
+| **Produto** | ![Detalhe do Produto](SUA_IMAGEM_AQUI) |
+| **Carrinho** | ![Carrinho de Compras](SUA_IMAGEM_AQUI) |
+
+> 💡 **Como colocar suas fotos:**
+> 1. Tire um print de cada tela no Android Studio ou no celular
+> 2. Salve as imagens em uma pasta do seu computador
+> 3. Faça upload para o GitHub (pode criar uma pasta chamada `screenshots/` neste mesmo repositório)
+> 4. Copie o link de cada imagem e cole no lugar de `SUA_IMAGEM_AQUI` acima
+
+---
+
 ## ✨ Funcionalidades
 
 | Módulo | O que faz |
