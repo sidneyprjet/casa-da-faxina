@@ -1,147 +1,111 @@
-# 🧼 Casa da Faxina — App de Produtos de Limpeza
+# 🚀 Casa da Faxina — App de Vendas de Produtos de Limpeza
 
-Aplicativo Android completo para loja de produtos de limpeza, desenvolvido com **Jetpack Compose**, **Kotlin** e arquitetura moderna. Ideal para portfólio e demonstração profissional para clientes.
+> **Transforme sua loja de limpeza em um negócio digital que vende 24 horas por dia, 7 dias por semana.**
 
----
-
-## 📱 Sobre o App
-
-O **Casa da Faxina** é um aplicativo móvel que permite aos clientes navegar por produtos de limpeza, adicionar ao carrinho, buscar itens, filtrar por categoria/promoções, editar perfil, gerenciar dados conforme a LGPD e finalizar pedidos pelo WhatsApp da loja.
-
-A solução inclui também uma área administrativa protegida por senha para a dona da loja.
+Você ainda recebe pedidos só por WhatsApp e perde vendas enquanto dorme? O **Casa da Faxina** é um aplicativo Android completo, moderno e pronto para usar, desenvolvido para lojistas de produtos de limpeza que querem **aumentar o faturamento, profissionalizar a imagem da marca e vender mais sem trabalhar mais.**
 
 ---
 
-## 📸 Telas do Aplicativo
+## 💰 Por que investir neste app?
 
-Abaixo você vê as principais telas do app. Para colocar as suas próprias fotos, tire capturas de tela no emulador ou celular e cole o link de cada imagem nos espaços marcados com `SUA_IMAGEM_AQUI`.
-
-| Tela | Preview |
-|------|---------|
-| **Início** | ![Tela Inicial](SUA_IMAGEM_AQUI) |
-| **Categorias** | ![Categorias](SUA_IMAGEM_AQUI) |
-| **Produto** | ![Detalhe do Produto](SUA_IMAGEM_AQUI) |
-| **Carrinho** | ![Carrinho de Compras](SUA_IMAGEM_AQUI) |
-
-> 💡 **Como colocar suas fotos:**
-> 1. Tire um print de cada tela no Android Studio ou no celular
-> 2. Salve as imagens em uma pasta do seu computador
-> 3. Faça upload para o GitHub (pode criar uma pasta chamada `screenshots/` neste mesmo repositório)
-> 4. Copie o link de cada imagem e cole no lugar de `SUA_IMAGEM_AQUI` acima
+| Sem o App | Com o Casa da Faxina |
+|-----------|---------------------|
+| Pedidos só por WhatsApp (perde cliente que não responde rápido) | Loja aberta 24h, cliente compra quando quiser |
+| Catálogo desorganizado, foto perdida na conversa | Vitrine profissional com fotos, preços e categorias |
+| Controle de estoque na cabeça ou em planilha | Banco de dados local, seguro e organizado |
+| Dados do cliente espalhados em conversas | Perfil do cliente com histórico e LGPD em dia |
+| Imagem amadora, dificulta confiança | App premium, Material 3, visual de luxo |
 
 ---
 
-## ✨ Funcionalidades
+## 🎯 O que seu cliente encontra no app
 
-| Módulo | O que faz |
-|--------|-----------|
-| **Vitrine de Produtos** | Lista de produtos com imagens, preços, categorias e descrições |
-| **Busca Inteligente** | Busca por nome, categoria ou descrição (sem distinção de acentos) |
-| **Filtros** | Promoções, Mais Vendidos e Todos |
-| **Carrinho de Compras** | Adicionar, remover itens e finalizar pedido pelo WhatsApp |
-| **Perfil do Cliente** | Editar nome e telefone, trocar foto de perfil, visualizar dados |
-| **LGPD** | Visualizar termos, editar ou excluir dados locais definitivamente |
-| **WhatsApp da Loja** | Atendimento direto com a dona pelo WhatsApp oficial |
-| **Área Admin** | Painel de administração protegido por senha master com hash e salt |
-| **Vídeo de Apresentação** | Vídeo institucional na tela inicial |
+- 🛒 **Vitrine de produtos** com fotos, preços, categorias e descrições
+- 🔍 **Busca inteligente** por nome, categoria ou descrição (mesmo com erro de acento)
+- 🏷️ **Filtros:** Promoções, Mais Vendidos e Todos
+- 📦 **Carrinho de compras** — cliente adiciona itens e finaliza pelo WhatsApp
+- 👤 **Perfil do cliente** — nome, telefone, foto de perfil, dados LGPD
+- 📱 **Atendimento direto** pelo WhatsApp oficial da loja
+- 🔐 **Área administrativa** protegida por senha (apenas você acessa)
+- 🎥 **Vídeo institucional** na tela inicial para gerar confiança
 
 ---
 
-## 🛠 Tecnologias Utilizadas
+## 🛠 Tecnologia de ponta (sem você precisar entender de código)
 
-- **Kotlin 1.9+** — Linguagem principal
-- **Jetpack Compose** — UI declarativa moderna (Material 3)
-- **Navigation 3** — Navegação entre telas com rotas tipadas
-- **Room** — Banco de dados local para dados da loja e sessão
-- **DataStore / SharedPreferences** — Preferências e sessão do usuário
-- **Coroutines + Flow** — Programação assíncrona reativa
-- **ViewModel** — Gerenciamento de estado de UI
-- **Material Design 3** — Componentes visuais modernos e responsivos
-- **CameraX / Galeria nativa** — Seleção de foto de perfil
-- **WhatsApp / Instagram Intents** — Integração com apps externos
-- **Criptografia PBKDF2** — Hash seguro de senhas administrativas
+O app foi construído com as ferramentas mais modernas do mercado Android:
+
+| Tecnologia | O que isso significa para o seu negócio |
+|------------|-----------------------------------------|
+| **Kotlin + Jetpack Compose** | App rápido, leve, bonito e fácil de manter |
+| **Material Design 3** | Visual premium, igual aos grandes apps |
+| **Room (Banco Local)** | Dados seguros no celular, funciona sem internet |
+| **LGPD Ready** | Seus dados e dos clientes protegidos por lei |
+| **Criptografia PBKDF2** | Senha administrativa protegida, ninguém invade |
 
 ---
 
-## 📂 Estrutura do Projeto
+## 📱 Telas do Aplicativo
 
-```
-app/src/main/java/com/example/myapplication/
-├── ui/
-│   ├── home/           # Tela inicial, busca, produtos, carrinho inferior
-│   ├── perfil/         # Perfil do cliente, LGPD, edição de dados
-│   ├── carrinho/       # Carrinho de compras e finalização
-│   ├── categorias/     # Navegação por categorias
-│   ├── produto/        # Detalhes do produto
-│   ├── admin/          # Área administrativa (login, painel, senha master)
-│   ├── cadastro/       # Cadastro e login de cliente
-│   └── theme/          # Tema Material 3 (cores, tipografia)
-├── components/         # Componentes reutilizáveis (Cabeçalho, Badge, etc.)
-├── data/
-│   ├── model/          # Modelos de dados (Produto, Usuario, ItemCarrinho)
-│   └── local/          # Room database, SessionManager, DAOs
-├── util/               # Utilitários (WhatsAppHelper, InstagramHelper, etc.)
-└── navigation/         # Configuração de rotas do Navigation 3
-```
+| Tela | O que o cliente faz |
+|------|---------------------|
+| **Início** | Vê promoções, vídeo da loja e atalhos rápidos |
+| **Categorias** | Navega por tipo de produto (pisos, tecidos, acessórios) |
+| **Produto** | Lê descrição, vê preço e adiciona ao carrinho |
+| **Carrinho** | Revisa o pedido e finaliza pelo WhatsApp |
 
 ---
 
-## 🚀 Como Rodar o Projeto
+## 🚀 Como funciona na prática
 
-### Pré-requisitos
+1. **Você cadastra** seus produtos (nome, preço, categoria, foto)
+2. **Cliente baixa o app** e navega pela vitrine
+3. **Cliente adiciona ao carrinho** e envia pedido pelo WhatsApp
+4. **Você recebe o pedido** organizado e fecha a venda
+5. **Dinheiro entra** enquanto você gerencia seu negócio
 
-- [Android Studio](https://developer.android.com/studio) (Giraffe ou superior recomendado)
-- JDK 17
-- Android SDK API 24 ou superior (recomendado API 34+)
-- Um emulador Android ou dispositivo físico com depuração USB ativada
+---
 
-### Passos
+## 🤝 Quer assinar o contrato hoje?
 
-1. **Clone este repositório**
-   ```bash
-   git clone https://github.com/SEU_USUARIO/MyApplication7.git
-   cd MyApplication7
-   ```
+Este app está **pronto para publicar na Play Store** e começar a vender amanhã. Não perca mais clientes para a concorrência.
 
-2. **Abra no Android Studio**
-   - Arquivo → Abrir → Selecione a pasta `MyApplication7`
-   - Aguarde a sincronização do Gradle
+### O que está incluído:
+- ✅ Código-fonte completo (Kotlin + Jetpack Compose)
+- ✅ App pronto para publicar na Google Play Store
+- ✅ Área administrativa com senha
+- ✅ Banco de dados local (Room)
+- ✅ LGPD em conformidade
+- ✅ Suporte para configurar seu WhatsApp da loja
+- ✅ Documentação profissional para portfólio
 
-3. **Configure o Google Services (opcional)**
-   - Se você usar Firebase, adicione o arquivo `google-services.json` na pasta `app/`
-   - Este arquivo **não** está versionado por segurança (veja `.gitignore`)
-
-4. **Configure o WhatsApp da loja**
-   - Abra `app/src/main/java/com/example/myapplication/util/WhatsAppHelper.kt`
-   - Substitua o valor de `numeroSarinhaWhatsApp` pelo número real da loja
-
-5. **Execute o app**
-   - Selecione um dispositivo/emulador
-   - Clique em ▶️ Run ou pressione `Shift + F10`
+### Como contratar:
+📲 **Entre em contato agora pelo WhatsApp** e garanta seu app personalizado com a identidade visual da sua loja.
 
 ---
 
 ## 🔐 Segurança e Privacidade
 
-- Senhas administrativas são armazenadas com **hash PBKDF2 + salt** (nunca em texto puro)
-- Dados dos clientes ficam **apenas no dispositivo local** (conforme LGPD)
-- Nenhum dado pessoal real está incluído neste repositório (todos os números e nomes são placeholders)
-- Arquivos sensíveis (`google-services.json`, `local.properties`, `.keystore`, `.jks`) são ignorados pelo Git
+- Senhas protegidas com **hash PBKDF2 + salt** (nunca em texto puro)
+- Dados dos clientes ficam **apenas no dispositivo local** (LGPD)
+- Arquivos sensíveis (`google-services.json`, certificados) nunca são expostos
 
 ---
 
 ## 📄 Licença
 
-Este projeto é distribuído para fins de portfólio profissional. Sinta-se à vontade para estudar, adaptar e usar como referência para seus próprios projetos Android.
+Este projeto é distribuído para fins de portfólio profissional e demonstração de capacidade técnica para clientes.
 
 ---
 
-## 👨‍💻 Autor
+## 👨‍💻 Desenvolvido para lojistas que querem crescer
 
-Desenvolvido com ❤️ para demonstrar boas práticas de desenvolvimento Android moderno.
+Sou desenvolvedor Android especialista em apps de varejo. Construo soluções que geram **resultado real para o seu negócio**, não apenas código bonito.
+
+**Quer vender mais com um app profissional?** Vamos conversar e assinar o contrato hoje mesmo.
 
 ---
 
 ## 📸 Pré-visualização
 
-*(Adicione capturas de tela das telas principais aqui para enriquecer seu portfólio)*
+*(Adicione capturas de tela das telas principais aqui para enriquecer seu portfólio e conquistar clientes)*
